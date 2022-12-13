@@ -8,6 +8,10 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
+    "sync:android": "ionic capacitor copy android && ionic capacitor sync android",
+    "android-studio:open": "ionic capacitor open android",
+    "build:android": "npm run build && npm run sync:android && npm run android-studio:open",
+    "live-reload:android": "ionic capacitor run android -l --external",
     "test": "ng test",
     "lint": "ng lint"
   },

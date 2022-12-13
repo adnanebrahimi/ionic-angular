@@ -1,6 +1,8 @@
 apply plugin: 'com.android.application'
 
 android {
+
+    namespace 'ionic.angular'
     compileSdkVersion rootProject.ext.compileSdkVersion
     defaultConfig {
         applicationId "ionic.angular"
