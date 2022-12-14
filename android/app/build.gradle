@@ -31,10 +31,6 @@ repositories {
     }
 }
 
-packagingOptions {
-        exclude 'build-data.properties'
-    }
-
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation "androidx.appcompat:appcompat:$androidxAppCompatVersion"
